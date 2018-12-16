@@ -64,8 +64,8 @@ https://github.com/bitcoin/bitcoin/releases
   
 :information_source: Please be aware that the internal data structure of Bitcoin Core changed from 0.16 to 0.17. If you download the blockchain using a different computer, make sure to use the same version. If you upgrade to 0.17, the data structure is converted automatically (can take a few hours) and it's not possible to use that data with older versions anymore.
 
-### How to upgrade LND? 
-Upgrading can lead to a number of issues. Please **always** read the [LND release notes](https://github.com/lightningnetwork/lnd/releases/tag/v0.5-beta) completely to understand the changes. They also cover a lot of additional topics and many new features not mentioned here. 
+### D7) Come aggiorno LND? 
+R7) Upgrading can lead to a number of issues. Please **always** read the [LND release notes](https://github.com/lightningnetwork/lnd/releases/tag/v0.5-beta) completely to understand the changes. They also cover a lot of additional topics and many new features not mentioned here. 
 
 * You might want to create a [backup of your system](raspibolt_65_system-recovery.md) first.  
 
@@ -144,11 +144,7 @@ The macaroons are now located under the chain data directory for each supported 
   `$ lncli unlock`  
   `$ sudo journalctl -u lnd -f`  
 
-### Why do I need the 32 bit version of Bitcoin when I have a Raspberry Pi 3 with a 64 bit processor?
-At the time of this writing (July 2018) there is no 64 bit operating system for the Raspberry Pi developed yet. The 64 bit processors of the Raspberry 3 versions are running in 32 bit compatibility mode with a 32 bit operating system.
+### D8) Perchè ho bisogno della versione a 32 bit di Bitcoin se io ho un Raspberry Pi 3 con un processonre a 64 bit?
+Al momento (Dec 2018) non esiste un sistema operativo a 64 bit per il Raspberry Pi. Il processore a 64 bit del Raspberry 3 quindi gira in modalità compatibilità a 32 bit i sistemi operativi a 32 bit.
 
-
-
-------
-
-<< Back: [Troubleshooting](raspibolt_70_troubleshooting.md) 
+-----
